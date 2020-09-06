@@ -2,39 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="/build/tailwind.css" />
     <title>Why you should hire me - Iván Alburquerque</title>
   </head>
   <body class="antialiased">
-    <header
-      class="fixed flex flex-row justify-between w-full h-12 p-2 bg-red-500"
-      role="banner"
-    >
-      <a href="https://dev.to" class="flex" aria-label="DEV home">
-        <img
-          src="assets/icons/icon-dev-logo.svg"
-          alt="DEV black logo, white letters spelling DEV"
-          width="50px"
-          height="40px"
-        />
-      </a>
-      <div class="">
-        <input type="text" placeholder="Search..." />
-      </div>
-      <div class="">
-        <a href="https://dev.to/connect"></a>
-        <a href="https://dev.to/notifications"></a>
-        <a href="#profile"></a>
+    <header class="sticky w-full bg-white h-14 shadow-sm" role="banner">
+      <div class="flex flex-row items-center px-2 m-auto h-full lg:max-w-8xl">
+        <a href="https://dev.to" class="flex text-white" aria-label="DEV home">
+          <svg
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 132 65"
+            aria-labelledby="dev-logo"
+            class="w-50px h-10 rounded-sm px-2 bg-black fill-current"
+            width="20%"
+            height="20%"
+          >
+            <title id="dev-logo">DEV logo</title>
+            <path
+              d="M0 33v32h11.3c12.5 0 17.7-1.6 21.5-6.5 3.8-4.8 4.4-9 4-28-.3-16.8-.5-18.2-2.7-21.8C30.3 2.5 26.1 1 12 1H0v32zm23.1-19.1c2.3 1.9 2.4 2.3 2.4 18.5 0 15.7-.1 16.7-2.2 18.8-1.7 1.6-3.5 2.2-7 2.2l-4.8.1-.3-20.8L11 12h4.9c3.3 0 5.6.6 7.2 1.9zm23-10.3c-2 2.6-2.1 3.9-2.1 29.6v26.9l2.5 2.4c2.3 2.4 2.9 2.5 16 2.5H76V54.1l-10.2-.3-10.3-.3v-15l6.3-.3 6.2-.3V27H55V12h21V1H62.1c-13.9 0-14 0-16 2.6zM87 15.2c2.1 7.9 5.5 20.8 7.6 28.8 3.2 12.3 4.3 15 7 17.7 1.9 2 4.2 3.3 5.7 3.3 3.1 0 7.1-3.1 8.5-6.7 1-2.6 15.2-55.6 15.2-56.8 0-.3-2.8-.5-6.2-.3l-6.3.3-5.6 21.5c-3.5 13.6-5.8 20.8-6.2 19.5C105.9 40 96 1.9 96 1.4c0-.2-2.9-.4-6.4-.4h-6.4L87 15.2z"
+            ></path>
+          </svg>
+        </a>
+        <div class="mx-2 max-w-sm">
+          <form action="https://dev.to/search" method="get">
+            <input
+              name="q"
+              type="text"
+              class="appearance-none outline-none p-2 mr-2 w-full rounded-md bg-gray-200 border-gray-600 border-solid border focus:border-2 focus:border-blue-700"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="search"
+            />
+          </form>
+        </div>
+        <div class="flex flex-row justify-between ml-auto space-x-2">
+          <a
+            href="https://dev.to/new"
+            class="hidden sm:block px-4 py-2 mr-2 rounded-md hover:cursor-pointer text-sm font-medium text-white bg-dev-blue-500 hover:bg-dev-blue-700 transition-colors duration-200 ease-in-out"
+          >
+            Write a post
+          </a>
+          <a href="https://dev.to/connect" class="p-2 rounded-full transition-colors duration-200 ease-in-out hover:bg-gray-300">
+            <img class="min-w-icon" src="/assets/icons/icon-connect.svg" alt="Chat bubble icon" />
+          </a>
+          <a href="https://dev.to/notifications" class="p-2 rounded-full transition-colors duration-200 ease-in-out hover:bg-gray-300">
+            <img class="min-w-icon" src="/assets/icons/icon-notification.svg" alt="Notification icon" />
+          </a>
+          <a href="#profile" class="flex rounded-full min-w-icon-md transition-colors duration-200 ease-in-out hover:bg-gray-300">
+            <button type="button" class="p-1" aria-label="Navigation Menu">
+              <img
+                src="/assets/images/profile-avatar.webp"
+                width="32"
+                height="32"
+                alt="User profile image"
+                class="min-w-icon rounded-full transition-colors duration-200 ease-in-out hover:bg-gray-300"
+              />
+            </button>
+          </a>
+        </div>
       </div>
     </header>
 
-    <aside>
+    <aside class="hidden">
       <div>
         <button>heart</button>
         <button>unicorn</button>
@@ -42,22 +75,33 @@
         <div>more</div>
       </div>
     </aside>
-    <main>
-      <div><img src="" alt="" /></div>
-      <h1>Title</h1>
-      <div class="">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-      <div>
-        <a href="">
-          <img src="" alt="" />
-          Iván Alburquerque
-        </a>
-      </div>
-      <div>read time - 3 min</div>
-      <div>content</div>
+    <main class="">
+      <article>
+        <header>
+          <div class="rounded-t-md">
+            <img
+              class="rounded-t-md object-cover"
+              src="https://picsum.photos/1000/420/?blur=2"
+              alt="A Photo of Iván resting on a couch with a laptop on his lap"
+            />
+          </div>
+          <h1 class="text-3xl leading-tight font-bold">A Frontend developer you should know about 🤯</h1>
+          <div class="">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+          <div>
+            <a href="">
+              <img src="" alt="" />
+              Iván Alburquerque
+            </a>
+          </div>
+          <div>read time - 3 min</div>
+        </header>
+
+        <div>content</div>
+      </article>
     </main>
     <aside></aside>
   </body>
