@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./public/**/*.html'],
   theme: {
     extend: {
+      borderWidth: {
+        '32': '32px',
+      },
       width: {
         '50px': '3.125rem',
       },
