@@ -14,6 +14,10 @@ module.exports = {
         'icon-lg': '56px',
         'icon-xl': '64px',
       },
+      inset: {
+        '14': '3.5rem',
+        '18': '5.5rem',
+      },
       colors: {
         'dev-gray': {
           '500': '#F9FAFA',
@@ -26,6 +30,10 @@ module.exports = {
       },
       spacing: {
         14: '3.5rem',
+      },
+      gridTemplateColumns: {
+        sidebar: '4rem 1fr',
+        full: '4rem 7fr 3fr',
       },
     },
   },
