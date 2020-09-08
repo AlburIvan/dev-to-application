@@ -9,8 +9,8 @@
     <title>Why you should hire me - Iván Alburquerque</title>
   </head>
   <body class="antialiased">
-    <header class="sticky w-full bg-white h-14 shadow-sm" role="banner">
-      <div class="flex flex-row items-center px-2 m-auto h-full lg:max-w-8xl">
+    <header class="sticky top-0 w-full bg-white h-14 shadow-sm" role="banner">
+      <div class="flex flex-row items-center px-2 m-auto h-full lg:max-w-site-width">
         <a href="https://dev.to" class="flex text-white" aria-label="DEV home">
           <svg
             role="img"
@@ -67,42 +67,183 @@
       </div>
     </header>
 
-    <aside class="hidden">
-      <div>
-        <button>heart</button>
-        <button>unicorn</button>
-        <button>bookmark</button>
-        <div>more</div>
-      </div>
-    </aside>
-    <main class="">
-      <article>
-        <header>
-          <div class="rounded-t-md">
-            <img
-              class="rounded-t-md object-cover"
-              src="https://picsum.photos/1000/420/?blur=2"
-              alt="A Photo of Iván resting on a couch with a laptop on his lap"
-            />
-          </div>
-          <h1 class="text-3xl leading-tight font-bold">A Frontend developer you should know about 🤯</h1>
-          <div class="">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-          </div>
-          <div>
-            <a href="">
-              <img src="" alt="" />
-              Iván Alburquerque
-            </a>
-          </div>
-          <div>read time - 3 min</div>
-        </header>
+    <div class="max-w-site-width pb-14">
+      <aside class="fixed bottom-0 w-full h-14 p-2 bg-gray-200 sm:sticky">
+        <div class="flex flex-row justify-between items-center">
+          
+          <button id="like-button" class="flex flex-row items-center border-none" role="checkbox" title="Heart">
+            <span class="p-2 rounded-full shadow-sm bg-transparent hover:text-red-600 hover:bg-red-200 transition-colors duration-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="absle2j69vb1ijjy85c46gkzdez8ce88"
+                class="fill-current"
+              >
+                <title id="absle2j69vb1ijjy85c46gkzdez8ce88">Heart</title>
+                <path
+                  d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z"
+                ></path>
+              </svg>
+            </span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="anayypfrq64auhtvum3eexej2l0r2d8a"
+                class="hidden fill-current"
+              >
+                <title id="anayypfrq64auhtvum3eexej2l0r2d8a">Heart</title>
+                <path
+                  d="M2.821 12.794a6.5 6.5 0 017.413-10.24h-.002L5.99 6.798l1.414 1.414 4.242-4.242a6.5 6.5 0 019.193 9.192L12 22l-9.192-9.192.013-.014z"
+                ></path>
+              </svg>
+            </span>
+            <span class="text-sm text-gray-600">453</span>
+          </button>
 
-        <div>content</div>
-      </article>
-    </main>
-    <aside></aside>
+          <button>unicorn</button>
+          <button>bookmark</button>
+          <div>more</div>
+        </div>
+      </aside>
+
+      <main class="max-w-site-width bg-dev-background">
+        <article class="bg-white rounded-md mb-3 shadow-sm">
+          <header class="mb-8">
+            <div class="rounded-t-md">
+              <img
+                class="rounded-t-md object-cover"
+                src="https://picsum.photos/1000/420/?blur=2"
+                alt="A Photo of Iván resting on a couch with a laptop on his lap"
+              />
+            </div>
+            <div class="p-3">
+              <h1 class="text-3xl leading-tight font-bold mb-4">A Frontend developer you should know about 🤯</h1>
+              <div class="flex flex-row flex-start flex-wrap space-x-1 mb-4">
+                <a href="https://dev.to/t/javascript" class="p-1 rounded-md text-xs text-white bg-gray-800">
+                  <span class="text-white text-opacity-25">#</span>
+                  javascript
+                </a>
+                <a href="https://dev.to/t/react" class="p-1 rounded-md text-xs text-teal-300 bg-gray-800">
+                  <span class="text-teal-300 text-opacity-50">#</span>
+                  react
+                </a>
+                <a href="https://dev.to/t/node" class="p-1 rounded-md text-xs text-white bg-green-700">
+                  <span class="text-white text-opacity-25">#</span>
+                  node
+                </a>
+                <a href="https://dev.to/t/vue" class="p-1 rounded-md text-xs text-white bg-green-500">
+                  <span class="text-white text-opacity-25">#</span>
+                  vue
+                </a>
+                <a href="https://dev.to/t/css" class="p-1 rounded-md text-xs text-gray-900 bg-gray-500">
+                  <span class="text-gray-900 text-opacity-25">#</span>
+                  css
+                </a>
+                <a href="https://dev.to/t/aws" class="p-1 rounded-md text-xs text-white bg-yellow-600">
+                  <span class="text-white text-opacity-25">#</span>
+                  aws
+                </a>
+                <a href="https://dev.to/t/linux" class="p-1 rounded-md text-xs text-gray-900 bg-indigo-300">
+                  <span class="text-gray-900 text-opacity-25">#</span>
+                  linux
+                </a>
+              </div>
+              <div class="flex flex-row mb-3">
+                <a href="#profile" class="flex items-center rounded-full min-w-icon-md font-medium">
+                  <img
+                    src="/assets/images/profile-avatar.webp"
+                    width="32"
+                    height="32"
+                    alt="User profile image"
+                    class="min-w-icon rounded-full mr-2"
+                  />
+                  Iván Alburquerque
+                </a>
+              </div>
+              <p class="text-sm font-normal text-gray-600">Sept 6, 2020 Updated on Sept 6, 2020 time ・ 8 min read</p>
+            </div>
+          </header>
+
+          <div class="p-3">
+            Procrastination, we've all dealt with it. But today because of this blog post you will find five full-stack projects you can add to your
+            portfolio before the end of 2020! Coming up with ideas on how to test your skills can be a pain in the ass. Trust me, I've been there and
+            so has everyone in the tech business. Let's dive right into it! Procrastination, we've all dealt with it. But today because of this blog
+            post you will find five full-stack projects you can add to your portfolio before the end of 2020! Coming up with ideas on how to test your
+            skills can be a pain in the ass. Trust me, I've been there and so has everyone in the tech business. Let's dive right into it!
+            Procrastination, we've all dealt with it. But today because of this blog post you will find five full-stack projects you can add to your
+            portfolio before the end of 2020! Coming up with ideas on how to test your skills can be a pain in the ass. Trust me, I've been there and
+            so has everyone in the tech business. Let's dive right into it! Procrastination, we've all dealt with it. But today because of this blog
+            post you will find five full-stack projects you can add to your portfolio before the end of 2020! Coming up with ideas on how to test your
+            skills can be a pain in the ass. Trust me, I've been there and so has everyone in the tech business. Let's dive right into it!
+            Procrastination, we've all dealt with it. But today because of this blog post you will find five full-stack projects you can add to your
+            portfolio before the end of 2020! Coming up with ideas on how to test your skills can be a pain in the ass. Trust me, I've been there and
+            so has everyone in the tech business. Let's dive right into it!
+          </div>
+        </article>
+        <section class="bg-dev-gray-500 p-3 rounded-md mb-3 shadow-sm">
+          <p class="text-sm font-normal text-gray-600 mb-3">
+            Posted on
+            <time datetime="2020-09-06 16:00">Sept 06</time>
+            by:
+          </p>
+
+          <div class="flex flex-row">
+            <div class="flex flex-row items-start mr-4 mb-3">
+              <a href="#profile" class="flex items-center rounded-full min-w-icon-xl font-medium">
+                <img class="min-w-icon rounded-full" src="/assets/images/profile-avatar.webp" width="56" height="56" alt="User profile image" />
+              </a>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="font-medium hover:text-dev-blue-500">
+                <a href="https://dev.to/Alburivan">Iván Alburquerque</a>
+              </h3>
+              <p class="font-medium text-gray-800 hover:text-gray-900 mb-3">
+                <a href="https://dev.to/alburivan">@Alburivan</a>
+              </p>
+              <p class="text-gray-700 mb-3">This is a long description that describes me in under 500 characters? maybe</p>
+              <div class="flex flex-row">
+                <button
+                  href="#"
+                  class="px-4 py-2 mr-2 rounded-md hover:cursor-pointer text-sm font-medium text-white bg-dev-blue-500 hover:bg-dev-blue-700 transition-colors duration-200 ease-in-out"
+                >
+                  Follow
+                </button>
+                <div class="flex items-center">
+                  <a href="http://twitter.com/alburivan" target="_blank" rel="noopener" class="ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="twitter-icon">
+                      <title id="twitter-icon">Twitter</title>
+                      <path
+                        d="M22.162 5.656a8.383 8.383 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.211 4.211 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.395 8.395 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.495 8.495 0 002.087-2.165l-.001-.001z"
+                        fill="#4D5760"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="http://github.com/alburivan" target="_blank" rel="noopener" class="ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="github-icon">
+                      <title id="github-icon">GitHub</title>
+                      <path
+                        fill="#4D5760"
+                        d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside></aside>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

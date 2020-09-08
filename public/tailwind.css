@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+
+  :root {
+    --site-width: 80rem;
+    --site-background: #EEF0F1;
+  }
+
+}
