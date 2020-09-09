@@ -2,15 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A Frontend developer you should know about" />
+    <meta
+      name="keywords"
+      content="aws, html, css, tailwindcss, linux, javascript, node, job, tech, software, coding, development, engineering, inclusive, community"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--l0c3Kmql--/c_limit,f_png,fl_progressive,q_80,w_152/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--2ecYCSjC--/c_limit,f_png,fl_progressive,q_80,w_167/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+    />
+    <link
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--t7tVouP9--/c_limit,f_png,fl_progressive,q_80,w_192/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+      rel="icon"
+      sizes="192x192"
+    />
+    <link
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--lrmEcD2H--/c_limit,f_png,fl_progressive,q_80,w_128/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+      rel="icon"
+      sizes="128x128"
+    />
+    <meta name="apple-mobile-web-app-title" content="dev.to" />
+    <meta name="application-name" content="dev.to" />
+    <meta property="fb:pages" content="568966383279687" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dev-to-application.vercel.app/" />
+    <meta property="og:title" content="A Frontend developer you should know about" />
+    <meta property="og:description" content="A Frontend developer you should know about" />
+    <meta property="og:site_name" content="DEV Community" />
     <link rel="stylesheet" href="/build/tailwind.css" />
     <title>Why you should hire me - Iván Alburquerque</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177529517-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-177529517-1');
+    </script>
   </head>
 
   <body class="antialiased bg-dev-background">
-    <header class="sticky top-0 w-full bg-white h-14 shadow-sm" role="banner">
+    <header class="fixed w-full bg-white h-14 shadow-sm z-10" role="banner">
       <div class="flex flex-row items-center px-2 m-auto h-full lg:max-w-site-width">
         <a href="https://dev.to" class="flex text-white" aria-label="DEV home">
           <svg
@@ -69,8 +124,8 @@
     </header>
 
     <div class="max-w-site-width pb-14 sm:my-0 sm:mx-auto sm:grid sm:grid-cols-sidebar lg:grid-cols-full sm:gap-3 sm:p-2">
-      <aside class="fixed bottom-0 w-full h-14 p-2 bg-dev-background sm:sticky sm:top-18 sm:w-16 sm:px-2 sm:py-0 sm:h-screen">
-        <div class="flex flex-row justify-between items-center sm:flex-col sm:space-y-6">
+      <aside class="fixed sm:relative bottom-0 w-full h-14 sm:h-full p-2 bg-dev-background sm:w-16 sm:px-0 sm:py-0">
+        <div class="sm:sticky flex flex-row justify-between items-center sm:flex-col sm:space-y-6 sm:bottom-0 sm:top-sidebar">
           <button id="like-button" class="flex flex-row sm:flex-col items-center border-none" role="checkbox" title="Heart">
             <span class="p-2 rounded-full shadow-sm bg-transparent hover:text-red-600 hover:bg-red-200 transition-colors duration-200">
               <svg
@@ -139,7 +194,7 @@
         </div>
       </aside>
 
-      <main class="max-w-site-width bg-dev-background">
+      <main class="max-w-site-width bg-dev-background sm:mt-14">
         <article class="bg-white rounded-md mb-3 shadow-sm">
           <header class="mb-8">
             <div class="rounded-t-md">
@@ -258,6 +313,8 @@
                 <a
                   class="underline hover:text-dev-blue-500 transition-colors duration-200 ease-in-out"
                   href="https://github.com/AlburIvan/react-native-svg-search"
+                  rel="noopener"
+                  target="_blank"
                 >
                   react-native-svg-cli
                 </a>
@@ -267,21 +324,39 @@
                 <a
                   class="underline hover:text-dev-blue-500 transition-colors duration-200 ease-in-out"
                   href="https://github.com/AlburIvan/frontend-template"
+                  rel="noopener"
+                  target="_blank"
                 >
-                  frontend template
+                  Frontend Template
                 </a>
               </li>
 
               <li>
-                <a class="underline hover:text-dev-blue-500 transition-colors duration-200 ease-in-out" href="https://github.com/AlburIvan/SlickForm">
+                <a
+                  class="underline hover:text-dev-blue-500 transition-colors duration-200 ease-in-out"
+                  href="https://github.com/AlburIvan/SlickForm"
+                  rel="noopener"
+                  target="_blank"
+                >
                   SlickForm
                 </a>
               </li>
             </ul>
 
             <p>
-              but I have lot more planned, and I thought what was better than be part of the most inclusive open source community for developers.
+              But I have lot more planned, and I thought what was better than be part of the most inclusive open source community for developers.
               Anyways hope I will hear from you in the near future! 😎
+            </p>
+            <p>
+              If you want to see the code of this website head to:
+              <a
+                class="underline hover:text-dev-blue-500 transition-colors duration-200 ease-in-out"
+                href="https://github.com/AlburIvan/dev-to-application"
+                rel="noopener"
+                target="_blank"
+              >
+                DEV application
+              </a>
             </p>
           </div>
         </article>
@@ -342,10 +417,10 @@
         </section>
       </main>
 
-      <aside class="hidden md:flex sm:flex-col sm:w-full sm:sticky sm:top-18 sm:h-screen">
+      <aside class="hidden sm:hidden lg:flex sm:flex-col sm:w-full sm:sticky sm:top-18 sm:h-screen">
         <div class="flex flex-col bg-dev-gray-500 rounded-md shadow sm px-4 py-4 border-t-32 border-black">
           <div class="flex flex-row">
-            <a href="#profile" class="flex items-center rounded-full min-w-icon-md -mt-12">
+            <a href="#profile" class="flex items-center rounded-full min-w-icon-md -mt-8">
               <img class="min-w-icon rounded-full" src="/assets/images/profile-avatar.webp" width="48" height="48" alt="User profile image" />
             </a>
             <a class="text-lg font-semibold ml-2 -mt-4 hover:text-dev-blue-500" href="https://dev.to/alburivan">Iván Alburquerque</a>

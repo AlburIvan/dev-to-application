@@ -18,6 +18,7 @@ module.exports = {
         'icon-xl': '64px',
       },
       inset: {
+        'sidebar': 'calc(3.5rem + 6vh)',
         '14': '3.5rem',
         '18': '5.5rem',
       },
