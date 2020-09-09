@@ -10,7 +10,7 @@ To get started:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/tailwindcss/playground.git dev-to-application
+   git clone git@github.com:AlburIvan/dev-to-application.git
 
    cd dev-to-application
    ```
